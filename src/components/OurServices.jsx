@@ -27,7 +27,7 @@ const OurServices = () => {
                 <div className="service">
                     <img src={hearing_aid} alt="" />
                     <h3>Hearing Aid Consultaion</h3>
-                    <p>We offer expert consultation to help you choose the best hearing aid based on your unique needs. Our specialists ensure personalized recommendations to improve your auditory experience.</p>
+                    <p>We offer expert consultation to help you choose the best hearing aid based on your unique needs. </p>
                 </div>
                 <div className="service">
                     <img src={parent} alt="" />

@@ -1,41 +1,46 @@
-.Appoinments h1{
-    text-align: center;
-    color: #123451;
-    margin-top: 10px;
-    text-decoration: underline;
-    text-underline-offset: 10px;
-}
-.Appoinments{
+.Appoinments {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    
-    
-}
-#Appoinments{
-    text-align: center;
-    padding: 20px;
-    width: 500px;
-    margin-top: 60px;
-    background-color: #ffc400;
-    
-    border-radius: 10px;
-    box-shadow: 0px 4px 6px rgba(0,0,0,0.9);
- 
+    margin: 20px;
+    h1{
+        color: #123451;
+        text-align: center;
+    }
 }
 
-#Appoinments input{
-    font-weight: 500;
+#Appoinments {
+    text-align: center;
+    padding: 20px;
+    width: 90%; /* Make it responsive by default */
+    max-width: 500px; /* Restrict maximum width */
+    margin-top: 60px;
+    background-color: #ffc400;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.9);
 }
-#Appoinments h1{
+
+#Appoinments input {
+    font-weight: 500;
+    font-size: 18px;
+    width: 100%; /* Ensure inputs take full width */
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+#Appoinments h1 {
     margin-bottom: 40px;
     color: #123451;
     text-decoration: none;
+    font-size: 1.5rem; /* Adjust size for readability */
 }
 
-#Appoinments button{
+#Appoinments button {
     margin-top: 15px;
     margin-bottom: 15px;
     padding: 15px;
@@ -44,8 +49,43 @@
     font-weight: 600;
     font-size: 1.3rem;
     color: #123451;
+    width: 100%; /* Button takes full width */
+    cursor: pointer;
 }
 
-#Appoinments button:hover{
-    background-color: #ffc400;
+#Appoinments button:hover {
+    background-color: #123451;
+    color: #ffc400;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+    #Appoinments {
+        padding: 15px;
+        width: 90%; /* Adjust width for smaller screens */
+    }
+
+    #Appoinments h1 {
+        font-size: 1.2rem; /* Reduce font size */
+    }
+
+    #Appoinments button {
+        font-size: 1rem; /* Reduce button size */
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    #Appoinments h1 {
+        font-size: 1rem; /* Further reduce font size */
+    }
+
+    #Appoinments input {
+        padding: 8px; /* Adjust padding for smaller inputs */
+    }
+
+    #Appoinments button {
+        font-size: 0.9rem; /* Smaller button text */
+        padding: 8px;
+    }
 }

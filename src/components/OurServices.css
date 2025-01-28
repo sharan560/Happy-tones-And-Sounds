@@ -55,3 +55,12 @@
     font-size: 1.4rem;
     font-weight: 600;
 }
+@media screen and (max-width: 480px) {
+    .service {
+        margin-left: 8px;
+        margin-right: 8px;
+       img{
+        width: 50px;
+       }
+    }
+}

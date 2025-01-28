@@ -15,7 +15,7 @@ function App() {
       <Home />
       <About />
       <OurServices />
-      {/* <BookAppoinments /> */}
+      <BookAppoinments />
       <Routes>
         <Route path="Login" element={<Login />} /> 
       </Routes>
