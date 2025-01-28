@@ -1,0 +1,285 @@
+#nav-Container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+    
+
+}
+
+#logo1{
+   width: 200px;
+   margin-left: 2px;
+   height: 70px;
+}
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+/* #125391 */
+nav a {
+    color: #172d44;
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center;
+    padding: 5px 8px;
+    border-radius: 5px;
+
+}
+
+#logo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    padding: 2px;
+    margin-left: 20px;
+}
+
+#logo:hover {
+    cursor: pointer;
+}
+
+#insta {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+}
+
+#insta img {
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    
+}
+
+#insta img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+nav a:hover {
+    color: #172d44;
+    background-color: #f5c236;
+    transition: all 1s ease;
+
+}
+
+#sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 250px;
+    z-index: 999;
+    height: 100vh;
+    background-color: #172d44;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.9);
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+#sidebar a {
+    width: 100%;
+    padding: 9%;
+    text-decoration: none;
+    color: #f9f9f9f9;
+    background-color: #172d44;
+    border-radius: 50px;
+}
+
+#sidebar a:hover {
+    background-color: #2b5078;
+}
+
+#close {
+    width: 50px;
+    height: 50px;
+    transition: all 1s ease;
+}
+
+#insta:nth-child(2) {
+    margin-right: 200px;
+}
+
+.close {
+    margin-left: 10px;
+}
+
+
+@media screen and (max-width: 900px) {
+    .mainNav {
+        display: none;
+    }
+
+    #head1 {
+        display: flex;
+       
+    }
+    #insta{
+        margin-bottom: 10px;
+    }
+}
+
+
+@media screen and (min-width: 901px) {
+    #head1 {
+        display: none;
+    }
+
+    .close {
+        display: none;
+    }
+
+    .menu {
+        display: none;
+    }
+}
+
+
+
+@media screen and (min-width: 900px) and (max-width: 1010px) {
+    #nav-Container {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 10px 20px;
+    }
+
+    nav {
+        gap: 20px;
+        justify-content: center;
+    }
+
+    nav a {
+        font-size: 20px;
+        padding: 5px 10px;
+    }
+
+    #insta {
+        margin-right: 10px;
+
+    }
+
+    #insta img {
+        width: 30px;
+        height: 30px;
+        padding: 3px;
+    }
+
+    #logo {
+        width: 70px;
+        height: 70px;
+        margin-left: 10px;
+    }
+
+    #head1 {
+        font-size: 20px;
+        text-align: center;
+        margin: 10px auto;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    #head1 {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    #logo {
+        width: 50px;
+        height: 50px;
+    }
+
+    #insta {
+        gap: 2px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #head1 {
+        font-size: 20px;
+        text-align: center;
+        display: inline;
+
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    #logo {
+        width: 45px;
+        height: 45px;
+        margin-left: 0px;
+    }
+
+    #insta {
+        gap: 0px;
+    }
+
+    #insta img {
+        width: 20px;
+        height: 20px;
+        margin-left: 2px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    #head1 {
+        font-size: 15px;
+    }
+
+    #insta {
+        gap: 0px;
+        margin-right: 2px;
+    }
+
+}
+
+@media screen and (min-width: 420px) {
+    #head1 {
+        font-size: 17px;
+    }
+
+    #insta {
+        gap: 0px;
+        margin-right: 2px;
+    }
+
+}
+
+@media screen and (max-width: 360px) {
+    #head1 {
+        font-size: 13px;
+        margin: 0px;
+    }
+
+    #insta {
+        gap: 0px;
+
+    }
+
+    #logo {
+        width: 40px;
+        height: 40px;
+
+    }
+
+    #insta img {
+        width: 13px;
+        height: 13px;
+       margin-top: 10px;
+        
+    }
+
+}

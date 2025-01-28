@@ -1,0 +1,51 @@
+.Appoinments h1{
+    text-align: center;
+    color: #123451;
+    margin-top: 10px;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+}
+.Appoinments{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+#Appoinments{
+    text-align: center;
+    padding: 20px;
+    width: 500px;
+    margin-top: 60px;
+    background-color: #ffc400;
+    
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.9);
+ 
+}
+
+#Appoinments input{
+    font-weight: 500;
+}
+#Appoinments h1{
+    margin-bottom: 40px;
+    color: #123451;
+    text-decoration: none;
+}
+
+#Appoinments button{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 15px;
+    border: 0px;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 1.3rem;
+    color: #123451;
+}
+
+#Appoinments button:hover{
+    background-color: #ffc400;
+}
