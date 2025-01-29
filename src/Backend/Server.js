@@ -5,6 +5,7 @@ dotenv.config();
 import cors from 'cors';
 import Admin from './Adminschema.js';
 
+
 const app = express();
 app.use(express.json());
 app.use(cors());
@@ -33,6 +34,24 @@ mongoose.connect(mongoURI)
 //     return res.status(500).json({ message: 'Internal Server Error', error });
 //   }
 // });
+
+
+
+
+// app.get('/Get-Appointments', async (req, res) => {
+//   try {
+     
+//       const appointments = await Appointment.find();
+//       return res.status(200).json({ appointments });
+//   } catch (error) {
+//       console.log(error);
+//       return res.status(500).json({ message: 'Internal Server Error', error });
+//   }
+// });
+
+
+
+
 
 
 const Appoinment_schema = new mongoose.Schema({

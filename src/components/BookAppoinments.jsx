@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import './BookAppoinments.css'
 import axios from 'axios';
-
+import emailjs from 'emailjs-com';
 
 const BookAppoinments = () => {
 
@@ -9,6 +9,10 @@ const BookAppoinments = () => {
     const [email,setemail]=useState('');
     const [phonenumber,setphonenumber]=useState('');
     const [date,setdate]=useState('');
+
+    const serviceId="service_iqomchd";
+    const tempelateId="template_zwccbmw";
+    const publickey="jIFOPxHm8c2crRXlH";
 
 
     const Submit =async(e) =>{
@@ -19,12 +23,27 @@ const BookAppoinments = () => {
             if(response.status===201)
             {
                 alert('Appoinment booked')
-                setname('');
-                setemail('');
-                setphonenumber('');
-                setdate('');
+
+                const tempelateparams={
+                    from_name:"sharan",
+                    from_email:email,
+                    email:email,
+                    to_name:"danista",
+                    message:"hello",
+                };
+
+                emailjs.send(serviceId,tempelateId,tempelateparams,publickey)
+                    .then((response)=>{
+                        console.log('Email Sent')
+                        setname('');
+                        setemail('');
+                        setphonenumber('');
+                        setdate('');
+
+                    })
+                }
             }
-            }
+
             catch(error)
             {
                 alert("Error occured")

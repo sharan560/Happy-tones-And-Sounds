@@ -1,5 +1,10 @@
 import React, { useEffect, useState, useRef } from 'react';
 import './Home.css';
+import slider1 from '../assets/slider1.jpg'
+import slider2 from '../assets/slider2.jpg'
+import slider3 from '../assets/slider3.mp4'
+import slider4 from '../assets/slider4.jpg'
+import slider5 from '../assets/slider5.mp4'
 
 const Home = () => {
   const [slideIndex, setSlideIndex] = useState(0);
@@ -7,9 +12,7 @@ const Home = () => {
   const intervalId = useRef(null);
 
   const slides = [
-    "https://picsum.photos/id/237/1535/650",
-    "https://picsum.photos/id/238/1535/650",
-    "https://picsum.photos/id/239/1535/650",
+    slider1,slider2,slider1,slider4,slider2
   ];
 
  

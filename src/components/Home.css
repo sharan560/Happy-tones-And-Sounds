@@ -1,46 +1,69 @@
-.slider{
+/* General slider styles */
+.slider {
     position: relative;
     width: 100%;
     margin: auto;
     overflow: hidden;
-
 }
 
-.slider img{
+.slider img, video {
     width: 100%;
-   display: none;
-
+    display: none;
+    height: 655px; /* Default height for larger screens */
 }
 
-img.displaySlide{
+img.displaySlide {
     display: block;
-
 }
 
-.slider button{
-    position:absolute;
+.slider button {
+    position: absolute;
     top: 50%;
     transform: translateY(-50%);
     font-size: 2rem;
-    background-color: rgba(0,0,0,0.1);
+    background-color: rgba(0, 0, 0, 0.1);
     color: white;
     border: none;
     cursor: pointer;
     padding: 15px;
-   
-
 }
 
-.previous{
+.previous {
     left: 0;
 }
-.next{
-    right:0;
+
+.next {
+    right: 0;
 }
 
-@keyframes fade{
-    from{opacity: .5;}
-    to{
-        opacity:1 ;
+/* Fade-in animation */
+@keyframes fade {
+    from {
+        opacity: .5;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .slider img, video {
+        height: 500px; 
+    }
+
+    .slider button {
+        font-size: 1.5rem; 
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .slider img, video {
+        height: 300px; 
+    }
+
+    .slider button {
+        font-size: 1.2rem; 
     }
 }

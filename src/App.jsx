@@ -6,6 +6,7 @@ import About from './components/About';
 import Login from './components/Login';
 import OurServices from './components/OurServices';
 import BookAppoinments from './components/BookAppoinments';
+import AppointmentsList from './components/Appoinmentslist';
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <About />
       <OurServices />
       <BookAppoinments />
+      <AppointmentsList />
       <Routes>
         <Route path="Login" element={<Login />} /> 
       </Routes>

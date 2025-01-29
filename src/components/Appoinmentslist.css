@@ -1,0 +1,23 @@
+
+.appointments-list {
+    padding: 20px;
+}
+
+.appointments-list table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.appointments-list th, .appointments-list td {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.appointments-list th {
+    background-color: #f4f4f4;
+}
+
+.appointments-list tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
