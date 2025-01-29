@@ -9,7 +9,7 @@
 .slider img, video {
     width: 100%;
     display: none;
-    height: 655px; /* Default height for larger screens */
+    height: 675px; 
 }
 
 img.displaySlide {
@@ -25,7 +25,8 @@ img.displaySlide {
     color: white;
     border: none;
     cursor: pointer;
-    padding: 15px;
+    padding: 10px;
+  
 }
 
 .previous {
@@ -49,7 +50,7 @@ img.displaySlide {
 
 @media screen and (max-width: 768px) {
     .slider img, video {
-        height: 500px; 
+        height: 400px; 
     }
 
     .slider button {
@@ -60,7 +61,7 @@ img.displaySlide {
 
 @media screen and (max-width: 480px) {
     .slider img, video {
-        height: 300px; 
+        height: 200px; 
     }
 
     .slider button {

@@ -25,7 +25,7 @@ const Navbar = () => {
   };
 
   const Login = () => {
-    navigate('./Login');
+    navigate('./login');
   };
 
   return (
