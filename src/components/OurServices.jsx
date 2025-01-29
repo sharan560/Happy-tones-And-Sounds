@@ -4,6 +4,7 @@ import speech from '../assets/Speech.png';
 import hearing_Screen from'../assets/hearing-screen.png';
 import hearing_aid from '../assets/hearing-aid.png';
 import parent from '../assets/parent.png';
+import audio from '../assets/audioverbal.png';
 
 const OurServices = () => {
     return (
@@ -16,8 +17,9 @@ const OurServices = () => {
                     <p>We offer professional speech therapy services to help improve communication and build confidence.</p>
                 </div>
                 <div className="service">
+                 <img src={audio} alt="" />
                     <h3>Audio Verbal therpay</h3>
-                    <p>Audio Verbal Therapy focuses on using hearing and auditory processing to help children with hearing loss develop speech and language skills, fostering natural communication in everyday settings.</p>
+                    <p>Audio Verbal Therapy focuses on using hearing and auditory processing to help children with hearing loss develop speech and language skills.</p>
                 </div>
                 <div className="service">
                     <img src={hearing_Screen} alt="" />

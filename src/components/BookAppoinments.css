@@ -5,6 +5,8 @@
     justify-content: center;
     align-items: center;
     margin: 20px;
+    z-index: 1000;
+    
     h1{
         color: #123451;
         text-align: center;
@@ -14,8 +16,8 @@
 #Appoinments {
     text-align: center;
     padding: 20px;
-    width: 90%; /* Make it responsive by default */
-    max-width: 500px; /* Restrict maximum width */
+    width: 90%; 
+    max-width: 500px; 
     margin-top: 60px;
     background-color: #ffc400;
     border-radius: 10px;
@@ -25,19 +27,19 @@
 #Appoinments input {
     font-weight: 500;
     font-size: 18px;
-    width: 100%; /* Ensure inputs take full width */
+    width: 100%; 
     margin-bottom: 15px;
     padding: 10px;
     border-radius: 5px;
     border: 1px solid #ccc;
-    box-sizing: border-box; /* Include padding in width calculation */
+    box-sizing: border-box; 
 }
 
 #Appoinments h1 {
     margin-bottom: 40px;
     color: #123451;
     text-decoration: none;
-    font-size: 1.5rem; /* Adjust size for readability */
+    font-size: 1.5rem; 
 }
 
 #Appoinments button {
@@ -49,7 +51,7 @@
     font-weight: 600;
     font-size: 1.3rem;
     color: #123451;
-    width: 100%; /* Button takes full width */
+    width: 100%; 
     cursor: pointer;
 }
 
@@ -58,34 +60,34 @@
     color: #ffc400;
 }
 
-/* Responsive styles for smaller screens */
+
 @media (max-width: 768px) {
     #Appoinments {
         padding: 15px;
-        width: 90%; /* Adjust width for smaller screens */
+        width: 90%; 
     }
 
     #Appoinments h1 {
-        font-size: 1.2rem; /* Reduce font size */
+        font-size: 1.2rem; 
     }
 
     #Appoinments button {
-        font-size: 1rem; /* Reduce button size */
+        font-size: 1rem; 
         padding: 10px;
     }
 }
 
 @media (max-width: 480px) {
     #Appoinments h1 {
-        font-size: 1rem; /* Further reduce font size */
+        font-size: 1rem; 
     }
 
     #Appoinments input {
-        padding: 8px; /* Adjust padding for smaller inputs */
+        padding: 8px; 
     }
 
     #Appoinments button {
-        font-size: 0.9rem; /* Smaller button text */
+        font-size: 0.9rem; 
         padding: 8px;
     }
 }
