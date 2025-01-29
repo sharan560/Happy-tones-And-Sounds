@@ -12,7 +12,7 @@ const AppointmentsList = () => {
       
         const fetchAppointments = async () => {
             try {
-                const response = await axios.get('http://localhost:5000/appointments');
+                const response = await axios.get('https://happytones-and-sounds-backend.onrender.com/appointments');
                 setAppointments(response.data.appointments); 
                 setLoading(false);
             } catch (err) {
