@@ -8,7 +8,7 @@ const About = () => {
 
     const navigate=useNavigate();
     const nav=()=>{
-      navigate('./Login')
+      window.location.href = '/Book-Appointments'; 
     }
 
   return (
